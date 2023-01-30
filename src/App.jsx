@@ -77,7 +77,6 @@ function App() {
 
   }, [filtro])
 
-console.log( gastosFiltrados)
 
   const handleNuevoGasto = () => {
     setModal(true)
@@ -91,7 +90,6 @@ console.log( gastosFiltrados)
   }
 
   const guardarGasto = gasto => {
-    console.log(gasto)
     if (gasto.id) {
       // Actualizar
       const gastosActualizados = gastos.map(gastoState => gastoState.id === gasto.id ? gasto : gastoState)
